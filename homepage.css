@@ -1,0 +1,46 @@
+.navbar{
+	font-family:lato;
+	width:100%;
+	background-color:#191970;
+	overflow:auto;
+}
+
+.navbar a{
+		font-family:lato;
+		float:left;
+		padding:12px;
+		color:Black;
+		text-decoration:none;
+		font-size:27px;
+}
+
+
+h1{
+	color:Black;
+	font-size:50px;
+	margin-top:1%;
+	padding-left:40%;
+	font-family:lato;
+}
+
+.footer{
+	text-align:center;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	font-size:17px;
+	font-weight:bold;
+	background-color:MediumVioletRed;
+	height:79px;
+	color:black;
+}
+.footer a{ color:white;
+}
+
+.para{
+	text-align:center;
+	
+}			  
+
+		  
