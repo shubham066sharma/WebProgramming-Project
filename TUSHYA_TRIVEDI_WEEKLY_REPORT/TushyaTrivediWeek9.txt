@@ -1,0 +1,50 @@
+WEEK 9
+
+JSP IN ECLIPSE
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Page1</title>
+</head>
+<body>
+<P> Hi my name is TUSHYA, give two numbers to add </P>
+<form action="redirect.jsp" method="post">
+  <label for="fnm">First :</label><br>
+  <input type="text" id="fnm" name="fnm" value="first"><br>
+  <label for="lnm">Last :</label><br>
+  <input type="text" id="lnm" name="lnm" value="last"><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Page2</title>
+</head>
+<body>
+<ul>
+     <li><p><b>First Number:</b>
+        <%= request.getParameter("fnm")%>
+     </p></li>
+     <li><p><b>Second  Number:</b>
+        <%= request.getParameter("lnm")%>
+     </p></li>
+     <li><p><b>Addition of two numbers:</b>
+    
+     
+     <%= "<h1> The sum is "+(Integer.parseInt(request.getParameter("fnm"))+Integer.parseInt(request.getParameter("lnm")))+"</h1>"%>
+    
+     
+  </p></li>
+  </ul>
+</body>
+</html>

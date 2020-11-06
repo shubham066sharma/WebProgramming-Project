@@ -1,0 +1,22 @@
+WEEK 6
+Simple applications using JSP and AJAX
+
+
+<script>
+// Javascript function to submit new chat entered by user
+function submitchat(){
+		if($('#chat').val()=='' || $('#chatbox').val()==' ') return false;
+		$.ajax({
+			url:'chat.php',
+			data:{chat:$('#chatbox').val(),ajaxsend:true},
+			method:'post',
+			success:function(data){
+				$('#result').html(data); // Get the chat records and add it to result div
+				$('#chatbox').val(''); //Clear chat box after successful submition
+
+				document.getElementById('result').scrollTop=document.getElementById('result').scrollHeight;
+				 // Bring the scrollbar to bottom of the chat resultbox in case of long chatbox
+			}
+		})
+		return false;
+};

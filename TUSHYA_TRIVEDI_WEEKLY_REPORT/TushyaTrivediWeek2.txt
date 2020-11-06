@@ -1,0 +1,116 @@
+WEEK 2 HTML PAGE CONTAINING MEDIA ELEMENTS
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+.all-phones {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-phones > h1, .phone {
+  margin: 10px;
+  padding: 5px;
+}
+
+.phone {
+  background: white;
+}
+
+.phone > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body>
+
+<article class="all-phones">
+  <h1>TOP 3 Phones 2020</h1>
+  <article class="browser">
+    <h2>1. Samsung Galaxy S20 Ultra</h2>
+    <p>Release date: March 2020 | Weight: 163g/186g |
+       Dimensions: 151.7 x 69.1 x 7.9mm/161.9 x 73.7 x 7.8mm |
+        OS: Android 10 | Screen size: 6.2-inch/6.7-inch |
+         Resolution: 1440 x 3200 | CPU: Snapdragon 865 / Exynos 990 |
+          RAM: 8GB/12GB | Storage: 128GB (S20) or 128GB/256GB/512GB (S20 Plus)
+       | Battery: 4,000mAh/4500mAh | Rear camera: 12MP + 64MP + 12MP | Front camera: 10MP</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/-wOdL7HFNOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>The video shows Samsung.</p>
+   </aside>
+  </article>
+  <article class="phone">
+    <h2>2. OnePlus 8 Pro</h2>
+    <p>Release date: April 2020 | Weight: 199g |
+       Dimensions: 165.3 x 74.35 x 8.5mm | OS: Android 10 |
+        Screen size: 6.78-inch | Resolution: 3168 x 1440 |
+         CPU: Snapdragon 865 | RAM: 8/12GB | Storage: 128/256GB |
+       Battery: 4,510mAh | Rear camera: 48MP+48MP+5MP+8MP | Front camera: 16MP</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/LTDuGU38-70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>The video shows OnePlus.</p>
+   </aside>
+  </article>
+  <article class="phone">
+    <h2>3. iPhone 11 Pro / 11 Pro Max</h2>
+    <p>Release date: September 2019 |
+       Weight: 188g/226g | Dimensions: 144 x 71.4 x 8.1mm/158 x 77.8 x 8.1mm |
+        OS: iOS 13 | Screen size: 5.8-inch/6.5-inch | Resolution: 1125 × 2436/1242 x 2688 |
+         CPU: Apple A13 Bionic | RAM: 4GB TBC | Storage: 64/256/512GB |
+       Battery: 3,046mAh/3,969mAh TBC | Rear camera: 12MP + 12MP + 12MP | Front camera: 12MP + 12MP</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/nxf41fMX_Y4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <aside>
+   <p>The video shows Apple's iPhone.</p>
+   </aside>
+  </article>
+</article>
+<section>
+  <h1>Apple</h1>
+  <p>Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. It is considered one of the Big Tech technology companies, alongside Amazon, Google, Microsoft, and Facebook.</p>
+  <a href="https://www.apple.com">apple.com</a>
+</section>
+<section>
+  <h1>Samsung</h1>
+  <p>Samsung is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul. It comprises numerous affiliated businesses, most of them united under the Samsung brand, and is the largest South Korean chaebol. Samsung was founded by Lee Byung-chul in 1938 as a trading company.</p>
+  <a href="https://www.samsung.com">apple.com</a>
+</section>
+<section>
+  <h1>OnePlus</h1>
+  <p>One Plus Technology Co., Ltd., commonly referred to as OnePlus, is a Chinese smartphone manufacturer based in Shenzhen, Guangdong. It was founded by Pete Lau and Carl Pei in December 2013. The company officially serves 34 countries and regions around the world as of July 2018. </p>
+  <a href="https://www.oneplus.com">apple.com</a>
+</section><br>
+<footer>
+  <p>Author: TUSHYA TRIVEDI</p>
+  <p><a href="mailto:ttushya@gmail.com">ttushya@gmail.com</a></p><br>
+</footer>
+<nav>
+  <a href="https://youtu.be/j52nXdQKFD0">MKBHD CHANNEL</a> |
+  <a href="https://youtu.be/GycfbqaGu_E">UNBOX THERAPY CHANNEL</a>
+
+</nav>
+</body>
+</html>
