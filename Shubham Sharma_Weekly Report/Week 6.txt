@@ -1,0 +1,45 @@
+WEEK 6 - Simple applications using JSP and AJAX
+
+--->AJAX
+
+<script>
+// Javascript function to submit new chat entered by user
+function submitchat(){
+		if($('#chat').val()=='' || $('#chatbox').val()==' ') return false;
+		$.ajax({
+			url:'chat.php',
+			data:{chat:$('#chatbox').val(),ajaxsend:true},
+			method:'post',
+			success:function(data){
+				$('#result').html(data); // Get the chat records and add it to result div
+				$('#chatbox').val(''); //Clear chat box after successful submition
+
+				document.getElementById('result').scrollTop=document.getElementById('result').scrollHeight;
+				 // Bring the scrollbar to bottom of the chat resultbox in case of long chatbox
+			}
+		})
+		return false;
+};
+
+
+----->JSP
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Page1</title>
+</head>
+<body>
+<P> Hi my name is Shubham Sharma , give two numbers to add </P>
+<form action="redirect.jsp" method="post">
+  <label for="fnm">First :</label><br>
+  <input type="text" id="fnm" name="fnm" value="first"><br>
+  <label for="lnm">Last :</label><br>
+  <input type="text" id="lnm" name="lnm" value="last"><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
