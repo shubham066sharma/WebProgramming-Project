@@ -30,7 +30,7 @@ JSP
 <title>Page1</title>
 </head>
 <body>
-<P> Hi my name is Shubham Sharma , give two numbers to add </P>
+<P>give two numbers to add </P>
 <form action="redirect.jsp" method="post">
   <label for="fnm">First :</label><br>
   <input type="text" id="fnm" name="fnm" value="first"><br>
